@@ -1,13 +1,11 @@
 package com.example.bookclg.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.context.annotation.Bean;
 
 import javax.persistence.*;
 
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
