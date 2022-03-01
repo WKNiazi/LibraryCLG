@@ -1,8 +1,8 @@
 package com.example.bookclg;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.context.annotation.Bean;
+
+import javax.persistence.*;
 
 @Entity
 public class Book {
@@ -12,7 +12,7 @@ public class Book {
     private String genre;
     private String author;
 
-    public Book(String name, String genre, String author) {
+    public Book(Long id,String name, String genre, String author) {
         this.id = id;
         this.name = name;
         this.genre = genre;

@@ -22,12 +22,14 @@ public class BookRepo implements JpaRepository<Book, Long> {
     @PersistenceContext
     private EntityManager entityManager;
 
+
     @Transactional
     public void insertWithConstruct(Book book) {
-        entityManager.createNativeQuery("INSERT INTO Book (name, genre, author) VALUES (?,?,?)")
-                .setParameter(1, book.getName())
-                .setParameter(2, book.getGenre())
-                .setParameter(3, book.getAuthor())
+        entityManager.createNativeQuery("INSERT INTO BOOK (id, name, genre, author) VALUES (?,?,?,?)")
+                .setParameter(1, book.getId())
+                .setParameter(2, book.getName())
+                .setParameter(3, book.getGenre())
+                .setParameter(4, book.getAuthor())
                 .executeUpdate();
     }
 

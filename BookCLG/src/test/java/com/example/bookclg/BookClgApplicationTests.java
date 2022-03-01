@@ -19,12 +19,8 @@ class BookClgApplicationTests {
 
     @Test
     public void dbEntryCheck() {
-        Book book = new Book ("Yuri Kites Adventure","Sci-Fi","Nick Federer");
-
-        assertThatExceptionOfType(PersistenceException.class).isThrownBy( () -> {
-            brepo.insertWithConstruct(book);
-        }
-        );
+        Book book = new Book (1L, "Yuri", "Sci-Fi", "Jimmy");
+        brepo.insertWithConstruct(book);
     }
 
 }
