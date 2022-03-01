@@ -19,7 +19,7 @@ class BookClgApplicationTests {
 
     @Test
     public void dbEntryCheck() {
-        Book book = new Book (1L, "Yuri", "Sci-Fi", "Jimmy");
+        Book book = new Book (2L,"The Kite Runner","Fictional Story","Khaled Housseini");
         brepo.insertWithConstruct(book);
     }
 
