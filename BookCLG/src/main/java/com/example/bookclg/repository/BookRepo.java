@@ -1,5 +1,6 @@
-package com.example.bookclg;
+package com.example.bookclg.repository;
 
+import com.example.bookclg.model.Book;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

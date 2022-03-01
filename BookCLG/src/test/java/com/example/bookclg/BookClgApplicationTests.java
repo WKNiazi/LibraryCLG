@@ -1,11 +1,10 @@
 package com.example.bookclg;
 
+import com.example.bookclg.model.Book;
+import com.example.bookclg.repository.BookRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import javax.persistence.PersistenceException;
-
-import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
 
 @SpringBootTest
 class BookClgApplicationTests {
